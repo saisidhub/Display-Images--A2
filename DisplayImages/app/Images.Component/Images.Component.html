@@ -1,0 +1,17 @@
+﻿<div *ngIf="images">
+    <table class="table table-striped table-responsive table-hover">
+        <th>Id</th>
+        <th>Image</th>
+        <th>Title</th>
+       
+        <tbody *ngFor="let i of images">
+            <tr>
+                  <td>{{i.id}}</td>
+               
+                <td height="100" width="100">  <img src="{{i.imagepath}}" /></td>
+                <td>    {{i.title}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
